@@ -1,0 +1,61 @@
+
+    
+<div *ngIf="usuario_rol=='administrador'">
+  <button [routerLink]="['login']" class="btn btn-danger m-1  col-md-1">Salir <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+  <div class="m-2 ">
+      <!-- Administrador -->
+    <table *ngIf="ListaSalas.length>0" class="table table-responsive table-striped">
+      <thead class="table-light">
+        <tr>
+          <th class="col-md-1" scope="col">Número</th>
+          <th scope="col">Nombre sala</th>
+          <th scope="col">Descripción sala</th>
+          <th class="col-md-1" scope="col">Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let sala of ListaSalas">
+          <th scope="row">{{sala.sala_id}}</th>
+          <td>{{sala.sala_nombre}}</td>
+          <td>{{sala.sala_descripcion}}</td>
+          <td>
+            <button [routerLink]="['/pelicula',sala.sala_id]" class="btn btn-primary"><i class="fa fa-video-camera"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- end Administrador -->
+  </div>
+</div>
+
+<div class="m-2">
+    <!-- Invitado -->
+    <div *ngIf="usuario_rol=='invitado'">
+      <button [routerLink]="['login']" class="btn btn-danger m-1  col-md-1">Salir <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+      <div class="row">
+        <h4>Listado de Peliculas disponibles </h4>
+          <div id="card" *ngFor="let pelicula of ListaPeliculas" class="card-columns m-3" style="width: 24rem;">
+            <img [src]="pelicula.pelicula_imagen" style="height:180px;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center bg-info rounded-3">{{pelicula.pelicula_nombre}}</h5>
+              <div class="row">
+                <strong class="col-md-5"><i class="fa fa-align-left"></i> Descripción:</strong><p class="col-md-7">{{pelicula.pelicula_descripcion}}</p>
+              </div>
+              <div class="row">
+                <strong  class="col-md-5"><i class="fa fa-calendar"></i> Horario:</strong><p class="col-md-7"> {{pelicula.pelicula_horario}}</p>
+              </div>
+              <div class="row">
+                <strong  class="col-md-5"><i class="fa fa-home"></i> Sala:</strong><p class="col-md-7">{{pelicula.sala_id}}</p> 
+              </div>
+              
+            </div>
+          </div>
+      </div>  
+      </div>
+      <!-- end invitado -->
+</div>
+
+
+
+
+

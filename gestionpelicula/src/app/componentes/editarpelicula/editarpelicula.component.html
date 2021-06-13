@@ -1,0 +1,54 @@
+<div class="col-md-12 p-5">
+    <div class="border border-2 p-2">
+      <form [formGroup]="formulario">
+          <div class="text-center">
+              <h4>Datos de la Peliculas</h4>
+          </div>
+        <div class="mb-3">
+          <label for="codigo" class="form-label">Código</label>
+          <input id="codigo" formControlName="codigo" type="number" class="form-control"
+            aria-label="codigo" aria-describedby="basic-addon1">
+        </div>
+
+         <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input id="nombre" formControlName="nombre" type="text" class="form-control"
+            aria-label="nombre" aria-describedby="basic-addon1">
+         </div>   
+              <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción</label>
+                <textarea id="descripcion" formControlName="descripcion" type="text" class="form-control"
+                 aria-label="descripcion" aria-describedby="basic-addon1"></textarea>
+              </div>   
+
+
+             <div class="mb-3">
+              <label for="horario" class="form-label">Horario</label>
+              <!-- <input id="horario" formControlName="horario" type="text" class="form-control" 
+                aria-label="horario" aria-describedby="basic-addon1"> -->
+
+                <select class="form-select" id="horario" formControlName="horario" aria-label="Default select example">
+                    <option value="Lunes a Viernes">Lunes a Viernes</option>
+                    <option value="Lunes a Sabado">Lunes a Sabado</option>
+                    <option value="Lunes a Domingo">Lunes a Domingo</option>
+                  </select>
+             </div>   
+
+             <div class="mb-3">
+              <label for="sala" class="form-label">Sala</label>
+              <input id="sala" formControlName="sala" type="number" class="form-control" 
+                aria-label="sala" aria-describedby="basic-addon1">
+             </div>
+             
+             <div class="mb-3">
+              <label for="formFileSm" class="form-label">Url Imagen</label>
+              <input class="form-control form-control-sm" id="imagen" formControlName="imagen" type="text">
+            </div>
+ 
+        <div class="text-center">
+          <!-- <button [routerLink]="['/pelicula',sala]" class="btn btn-primary">Volver</button>&nbsp; -->
+          <button [disabled]="formulario.invalid" (click)="guardar()" class="btn btn-primary">Guardar <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="padre" >
+    <div class="col-md-3">
+      <div class="card text-center border border-info">
+        <div class="card-header bg-info">
+          <div class="row">
+            <p><i class="fa fa-user"></i> AUTENTICACIÓN DEL USUARIO</p>
+          </div>
+        </div>
+        <div class="card-body body">
+          <h5 class="card-title">Bienvenido</h5>
+    <!-- Formulario -->
+          <form [formGroup]="formularioLogin" (ngSubmit)="autenticacion()">
+            <!-- Usuario -->
+            <input id="usuario" formControlName="usuario" type="text" class="form-control" placeholder="Usuario">
+            <br>
+            <!-- End Usuario -->
+    
+            <!-- Password -->
+            <input id="password" formControlName="password" type="password" class="form-control" placeholder="Constraseña">
+            <span *ngIf="usuarioContrasena==true"><strong>Usuario</strong> o <strong>Contraseña</strong> incorrectos</span><br>
+            <!-- End password -->
+            <button [disabled]="formularioLogin.invalid" type="submit" class="btn btn-success">Ingresar <i class="fa fa-arrow-circle-right"></i></button>
+          </form>
+    <!-- End Formulario -->
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+

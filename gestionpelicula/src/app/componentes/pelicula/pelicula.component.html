@@ -1,0 +1,50 @@
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+<!-- <tabla > -->
+
+
+<div class="m-2">
+  <!-- <div class="row"> -->
+    <button  (click)="gestion('agregar',-1)" class="btn btn-success m-1 col-md-1">Agregar <i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+    <button [routerLink]="['/principal','administrador']" class="btn btn-primary m-1  col-md-1">Salas <i class="fa fa-desktop" aria-hidden="true"></i></button>
+    <button [routerLink]="['login']" class="btn btn-danger m-1  col-md-1">Salir <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+
+    <!-- <select [(ngModel)]="opcionSeleccionado" (change)="capturar()" class="form-select" aria-label="Default select example">
+      <option value="Lunes a Viernes">Lunes a Viernes</option>
+      <option value="Lunes a Sabado">Lunes a Sabado</option>
+      <option value="Lunes a Domingo">Lunes a Domingo</option>
+    </select> -->
+  <!-- </div> -->
+<div class="row">
+  <h5>Listado de peliculas disponibles de la sala {{id}}</h5>
+    <div class="col-md-12">
+      <table class="table table-responsive table-striped">
+        <thead class="table-light">
+          <tr>
+            <th class="col-md-1" scope="col">Código</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Horario</th>
+            <th class="col-md-1" scope="col">Sala</th>
+            <th class="col-md-1" scope="col">Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pelicula of ListaPeliculas">
+            <th scope="row">{{pelicula.pelicula_codigo}}</th>
+            <td>{{pelicula.pelicula_nombre}}</td>
+            <td>{{pelicula.pelicula_descripcion}}</td>
+            <td>{{pelicula.pelicula_horario}}</td>
+            <td>{{pelicula.sala_id}}</td>
+            <td>
+              <button (click)="gestion('editar',pelicula.pelicula_codigo)" class="btn btn-primary">
+                <i class="fa fa-pencil"></i>
+              </button>
+              <button (click)="elimina(pelicula.pelicula_codigo)" class="btn btn-danger "><i class="fa fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
