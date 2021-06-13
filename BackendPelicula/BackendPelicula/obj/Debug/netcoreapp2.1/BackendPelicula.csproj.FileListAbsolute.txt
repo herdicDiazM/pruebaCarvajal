@@ -1,0 +1,14 @@
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\bin\Debug\netcoreapp2.1\BackendPelicula.deps.json
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\bin\Debug\netcoreapp2.1\BackendPelicula.runtimeconfig.json
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\bin\Debug\netcoreapp2.1\BackendPelicula.runtimeconfig.dev.json
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\bin\Debug\netcoreapp2.1\BackendPelicula.dll
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\bin\Debug\netcoreapp2.1\BackendPelicula.pdb
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\obj\Debug\netcoreapp2.1\BackendPelicula.csprojAssemblyReference.cache
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\obj\Debug\netcoreapp2.1\BackendPelicula.csproj.CoreCompileInputs.cache
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\obj\Debug\netcoreapp2.1\BackendPelicula.RazorAssemblyInfo.cache
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\obj\Debug\netcoreapp2.1\BackendPelicula.RazorAssemblyInfo.cs
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\obj\Debug\netcoreapp2.1\BackendPelicula.AssemblyInfoInputs.cache
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\obj\Debug\netcoreapp2.1\BackendPelicula.AssemblyInfo.cs
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\obj\Debug\netcoreapp2.1\BackendPelicula.RazorTargetAssemblyInfo.cache
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\obj\Debug\netcoreapp2.1\BackendPelicula.dll
+D:\USUARIO\Desktop\PruebaCarvajal\BackendPelicula\BackendPelicula\obj\Debug\netcoreapp2.1\BackendPelicula.pdb
